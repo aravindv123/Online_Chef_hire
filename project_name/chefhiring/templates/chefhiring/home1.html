@@ -1,0 +1,31 @@
+<h1 style="text-align: center; font-size: 36px; color: #333; margin-top: 50px; font-family: 'Arial', sans-serif;">
+    Welcome to ChefHiring
+</h1>
+
+
+   
+  
+    <span style="margin: 0 10px;">|</span>
+    {% csrf_token %}
+    <a href="{% url 'logout' %}" style="text-decoration: none; font-size: 18px; color: #dc3545; padding: 10px 20px; background-color: #f4f4f4; border-radius: 5px; border: 1px solid #dc3545; transition: background-color 0.3s, color 0.3s;">
+        Logout
+    </a>
+</div>
+
+<!-- Additional inline styles -->
+<style>
+    a:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    a[href="{% url 'signup' %}"]:hover {
+        background-color: #28a745;
+        color: #fff;
+    }
+
+    a[href="{% url 'logout' %}"]:hover {
+        background-color: #dc3545;
+        color: #fff;
+    }
+</style>

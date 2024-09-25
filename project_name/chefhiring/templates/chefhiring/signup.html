@@ -1,0 +1,70 @@
+
+<form method="POST" style="max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f4f4f4; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <input type="hidden" name="csrfmiddlewaretoken" value="ZcYg6yyMzv1sJsU5FPBtUVbgpNjzy8jaZbLkkT9FH3bD1WFCxXXDF5zAxGGrPOXm">
+    <p>
+    <label for="id_username">Username:</label>
+    <input type="text" name="username" maxlength="150" required aria-describedby="id_username_helptext" id="id_username">
+    
+      {% comment %} <span class="helptext" id="id_username_helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span> {% endcomment %}
+    
+    
+  </p>
+
+  
+  <p>
+    <label for="id_email">Email address:</label>
+    <input type="email" name="email" maxlength="254" id="id_email">
+    
+    
+  </p>
+
+  
+  <p>
+    <label for="id_password">Password:</label>
+    <input type="password" name="password" required id="id_password">
+    
+    
+  </p>
+
+  
+  <p>
+    <label for="id_password_confirm">Confirm Password:</label>
+    <input type="password" name="password_confirm" required id="id_password_confirm">
+    
+    
+      
+    
+  </p>
+    <button type="submit" style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+        Sign up
+    </button>
+</form>
+
+<!-- Additional inline styles -->
+<style>
+    form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+        color: #333;
+    }
+
+    form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    form input:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    form button:hover {
+        background-color: #0056b3;
+    }
+</style>
